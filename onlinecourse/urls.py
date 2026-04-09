@@ -28,7 +28,8 @@ urlpatterns = [
 
     # ✅ Vizsga eredmény (HIÁNYZOTT)
     # ex: /onlinecourse/result/3/
-    path('result/<int:submission_id>/', views.show_exam_result, name='show_exam_result'),
+    path('course/<int:course_id>/submission/<int:submission_id>/result/', views.show_exam_result, name="exam_result"),
+
 ]
 
 # 🔹 Media fájlok
